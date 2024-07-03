@@ -76,7 +76,7 @@ const form = useForm<z.infer<typeof signinValidation>>({
     <Form {...form}>
       <div className="sm:w-420 flex-center flex-col">
         <img src="/assets/images/logo.svg" alt="" />
-        <h2 className="h3-bold md:h2-bold pt-5 sm:pt-12">Log in to your Account</h2>
+        <h2 className="h3-bold md:h2-bold pt-5 sm:pt-12">Log in to your Account!</h2>
         <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col gap-5 w-full mt-4">
        
         <FormField
