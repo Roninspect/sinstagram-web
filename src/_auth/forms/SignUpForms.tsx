@@ -20,9 +20,9 @@ const { toast } = useToast()
 
 const {mutateAsync: createUserAccount, isPending: isCreatingAccount} = useCreateUserAccountMutation();
 
-const {mutateAsync:signInAccount, isPending:isSigningIn} = useSignInAccount();
+const {mutateAsync:signInAccount} = useSignInAccount();
 
-const { checkAuthUser, isLoading: isUserLoading } = useUserContext();
+const { checkAuthUser } = useUserContext();
 
 const navigate = useNavigate();
 

@@ -4,7 +4,7 @@ import { Models } from 'appwrite';
 import PostCard from '@/components/shared/PostCard';
 
 const Home = () => {
-  const {data:recentPosts, isPending:isPostLoading, isError}= useGetRecentPosts();
+  const {data:recentPosts, isPending:isPostLoading}= useGetRecentPosts();
   return (
     <div className='flex flex-1'>
       <div className='home-container'>
