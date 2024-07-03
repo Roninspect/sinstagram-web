@@ -106,7 +106,7 @@ const form = useForm<z.infer<typeof signinValidation>>({
           )}
         />
         <Button type="submit" className="shad-button_primary">{
-          isUserLoading ? (
+         isPending && isUserLoading ? (
             <div className="flex-center gap-2"><Loader/> Loading...</div>
           ): (<div className="flex-center gap-2">Sign In</div>)}</Button>
         <p className="text-small-regular text-light-2 text-center mt-2">
