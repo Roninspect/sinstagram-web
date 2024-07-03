@@ -1,6 +1,6 @@
 import { INewPost, INewUser, IUpdatePost, IUpdateUser } from "@/types/types";
 import { account, appwriteConfigs, avatars, db, storage } from "../config";
-import { ID, Query } from "appwrite";
+import { ID, ImageGravity, Query } from "appwrite";
 import { URL } from "url";
 
 export async function createUserAccount(user: INewUser) {
@@ -166,7 +166,7 @@ export function getFilePreview(fileId: string) {
       fileId,
       2000,
       2000,
-      "top",
+      ImageGravity.Top,
       100
     );
 
